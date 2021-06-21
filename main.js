@@ -1,27 +1,4 @@
-friendname_array=[];
-function submit() {
-    var name1=document.getElementById("friend1").value;
-    var name2=document.getElementById("friend2").value;
-    var name3=document.getElementById("friend3").value;
-    var name4=document.getElementById("friend4").value;
-    var name5=document.getElementById("friend5").value;
-    var name6=document.getElementById("friend6").value;
-    var name7=document.getElementById("friend7").value;
-
-
-    friendname_array.push(name1);
-    friendname_array.push(name2);
-    friendname_array.push(name3);
-    friendname_array.push(name4);
-    friendname_array.push(name5);
-    friendname_array.push(name6);
-    friendname_array.push(name7);
-
-    console.log(friendname_array) 
-    document.getElementById("displayname").innerHTML = friendname_array;
-    document.getElementById("submitbutton").style.display = "none";
-    document.getElementById("sortbutton").style.display = "inline-block";
-}
+function getParagraph1() { var inputs = []; for(var i = 1 ; i <=6 ; i++) { inputs.push(document.getElementById("friend" + i).value); } document.getElementById("showParagraph1").innerHTML = inputs.join(". "); } 
 
   
 
